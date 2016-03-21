@@ -1,0 +1,41 @@
+{
+  "name": "seiler/shortcoder",
+  "type": "library",
+  "description": "Build your own shortcodes system with ease",
+  "keywords": [
+    "seiler",
+    "shortcoder",
+    "shortcodes"
+  ],
+  "homepage": "https://github.com/fredericseiler/shortcoder",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Frederic Seiler",
+      "email": "frederic@seiler.io",
+      "homepage": "https://github.com/fredericseiler",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.3|~5.0",
+    "scrutinizer/ocular": "~1.1",
+    "squizlabs/php_codesniffer": "~2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Seiler\\Shortcoder\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Seiler\\Shortcoder\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
